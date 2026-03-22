@@ -1,27 +1,30 @@
 # EconML: Analyzing the Effects of Education Programs on Student Performance
 
-This project demonstrates how to use **EconML** for causal inference—estimating the causal impact of an educational support program (`schoolsup`) on student final grades (`G3`) and identifying which demographics benefit most (heterogeneous treatment effects / CATE).
+## Note
+
+This repository contains my individual MSML 610 course project on estimating the effects of education support programs on student performance using EconML.
+The original course submission was included in my professor’s MSML 610 course project repository. This standalone version is reposted on my GitHub for portfolio purposes.
+
+This project demonstrates how to use **EconML** for causal inference, estimating the causal impact of an educational support program (`schoolsup`) on student final grades (`G3`) and identifying which demographics benefit most (heterogeneous treatment effects / CATE).
 
 The project is designed to be **fully reproducible via Docker** so that anyone can run the notebooks without manually installing Python packages on their machine.
 
 ## Project Layout (Folder Structure):
 
-MSML610/  
-└── Fall2025/  
-&nbsp;&nbsp;&nbsp;&nbsp;└── Projects/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── UmdTask59_Fall2025_EconML_Analyzing_the_Effects_of_Education_Programs_on_Student_Performance/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml_utils.py  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.API.ipynb  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.API.md  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.example.ipynb  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.example.md  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── requirements.txt  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Dockerfile  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── docker_build.sh  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── docker_jupyter.sh  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── README.md
+gannaj22/  
+└── UmdTask59_Fall2025_EconML_Analyzing_the_Effects_of_Education_Programs_on_Student_Performance/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml_utils.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.API.ipynb  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.API.md  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.example.ipynb  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── econml.example.md  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── requirements.txt  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Dockerfile  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── docker_build.sh  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── docker_jupyter.sh  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── README.md
 
-> Note: folders like `__pycache__/` and `.ipynb_checkpoints/` are generated automatically.
+> Note: folders like `__pycache__/` and `.ipynb_checkpoints/` are generated automatically and will be added to .gitignore.
 
 ## Files in This Folder
 
@@ -67,7 +70,6 @@ cd <REPO_ROOT>
 ```
 
 ### Step 2 - Navigate to this project folder
-`cd class_project/MSML610/Fall2025/Projects/UmdTask59_Fall2025_EconML_Analyzing_the_Effects_of_Education_Programs_on_Student_Performance`
 
 ### Step 3 - Build the Docker image (installs requirements)
 This installs everything in `requirements.txt` inside the container.
